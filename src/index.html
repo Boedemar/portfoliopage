@@ -1,0 +1,154 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Alumni+Sans:wght@100&family=Bebas+Neue&display=swap');
+  #navbar {
+    background: #EEBA0B;
+    border-color: #C36F09;
+    border-width: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  .nav-link {
+    color:#660000;
+    font-size: 18px;
+  }
+  #title {
+    font-family: 'Allison', cursive;
+    font-size: 80px;
+    color: #FCF7B0;
+  }
+  #description {
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+    color: #FCF7B0;
+  }
+  #profile-link {
+    font-family:'Bebas Neue', cursive;
+      font-size: 50px;
+      font-color: #660000;
+      display: flex;
+      justify-content: center;
+  }
+  html {
+    background: #FCF7B0;
+  }
+  #welcome-section {
+    box-shadow: 0 10px 20px #A63C06, 0 6px 6px      rgba(0,0,0,0.23); 
+    background: #660000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  #projects {
+    background: #FDECD8;
+    box-shadow: 0 10px 20px #A63C06, 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .projects-section-header {
+    color:#660000;
+    font-family:'Bebas Neue', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 100px) {
+    #profile-link {
+      font-size: 15px;
+    }
+  }
+  .projects-grid {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  p {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 30px;
+  }
+  a {
+    color: #660000;
+  }
+  a:hover {
+    color: #F55F14;
+  }
+</style>
+<!--end of style-->
+<!--start of navbar-->
+<nav id="navbar">
+  <ul>
+    <li><a class="nav-link" href="#projects">Projects</a></li>
+    <li><a class="nav-link" href="#profile-link">About</a></li>
+  </ul>
+</nav>
+<!--end of navbar-->
+<!--start of welcome-->
+<section id="welcome-section">
+  <h1 id="title">Portfolio Briefcase</h1>
+  <p id="description">Marlise's Collection of Coding Trinkets</p>
+</section>
+<!--end of welcome-->
+<!--start of projects-->
+<section id="projects" class="projects section">
+  <h2 class="projects-section-header">Completed Projects</h2>
+<div class="projects-grid">
+  <!--end of project intro-->
+<!--start of project 1-->
+    <a href="https://codepen.io/Boedemar/pen/NWgPErV"
+      target="_blank"
+      class="project-tile">
+      <img
+        class="project-image"
+src="https://live.staticflickr.com/65535/51404380141_21afe53702_n.jpg"
+        alt="Tribute Page"></img>
+      <p class="project-title">
+        Tribute Page </p>
+    </a>
+  <!--end of project 1-->
+<!--start of project 2-->
+  <a href="https://codepen.io/Boedemar/pen/GREgzjm"
+      target="_blank"
+      class="project-tile">
+      <img
+        class="project-image"
+src="https://live.staticflickr.com/65535/51405144024_d6c032d116_n.jpg" 
+        alt="Tarot Survey Page"></img>
+      <p class="project-title">
+        Tarot Survey Page </p>
+    </a>
+  <!--end of project 2-->
+<!--start of project 3-->
+  <a href="https://codepen.io/Boedemar/pen/YzQPMBX"
+      target="_blank"
+      class="project-tile">
+      <img
+        class="project-image"
+src="https://live.staticflickr.com/65535/51404401026_313ca21882_n.jpg"
+        alt="Product Landing Page"></img>
+      <p class="project-title">
+        Product Landing Page </p>
+    </a>
+ <!--end of project 3-->
+<!--start of project 4-->
+<a href="https://codepen.io/Boedemar/pen/vYZOgOW"
+      target="_blank"
+      class="project-tile">
+      <img
+        class="project-image"
+src="https://live.staticflickr.com/65535/51403655317_c30a49858b_n.jpg"
+        alt="Technical Documentation Page"></img>
+      <p class="project-title">
+        Technical Documentation Page </p>
+    </a>
+</section>
+ <!--end of projects-->
+<!--start of about link-->
+<section>
+  <a id="profile-link" href="https://github.com/Boedemar" target="_blank">
+    Find me on Github!
+  </a>
+</section>
